@@ -6,11 +6,8 @@ struct node {
 };
 struct node* BuildOneTwoThree() {
   struct node* head = malloc(sizeof(struct node));
-  struct node* second = NULL;
-  struct node* third = NULL;
-
-  second = malloc(sizeof(struct node));
-  third = malloc(sizeof(struct node));
+  struct node* second = malloc(sizeof(struct node));
+  struct node* third = malloc(sizeof(struct node));
 
   head->data = 1;
   head->next = second;
