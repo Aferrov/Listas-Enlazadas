@@ -5,11 +5,10 @@ struct node {
   struct node* next;
 };
 struct node* BuildOneTwoThree() {
-  struct node* head = NULL;
+  struct node* head = malloc(sizeof(struct node));
   struct node* second = NULL;
   struct node* third = NULL;
 
-  head = malloc(sizeof(struct node));
   second = malloc(sizeof(struct node));
   third = malloc(sizeof(struct node));
 
